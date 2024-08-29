@@ -9,7 +9,7 @@ step=100;
 set(pic,'InnerPosition',[0 0 3200 2000]);
 for i = 1:length(LFP_Data)
     subplot(length(files)/3,length(files)/3,i);
-    imagesc(LFP_Data{i}(strat_p:end_p,:));
+    imagesc(LFP_Data{i}(start_p:end_p,:));
     xlabel('time(s)');
     ylabel('electrode');
     xticks(1:step:length(TimeVector));
